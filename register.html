@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+
+<meta name="description" content="Page Description Here" />
+<!--<meta http-equiv="X-UA-Compatible content="IE=edge">-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+
+<!-- CSS File-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+<!-- <link rel="stylesheet" href="style.css"> -->
+<link href="css/Bootstrap(Register,Login).css" rel="stylesheet" media="all" />
+
+</head>
+
+<body>
+
+    <div class="login-dark">
+
+        <form  action="php/register.php" method="post" >
+            <h2 style="text-align:center;">Register Form</h2>
+            <br>
+            <br>
+            <div class="form-group"><input class="form-control" type="text" name="username" placeholder="Username" minlength="5" maxlength="15" class="lowercase" required></div>
+            <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password" pattern="[0-9a-zA-Z@.]{5,15}" onChange="onChange()" required></div>
+            <div class="form-group"><input class="form-control" type="password" name="re-password" placeholder="Re-Password" pattern="[0-9a-zA-Z@.]{5,15}" onChange="onChange()" required></div>
+            <script type="text/javascript" src="js/register.js"></script>
+            <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email" class="lowercase" required></div>
+            <div class="form-group"><button class="btn btn-primary btn-block" type="submit">SIGNUP</button></div>
+
+        </form>
+    </div>
+
+</body>
+</html>
